@@ -12,30 +12,28 @@
     - Preview Dataset (permite visualizar se o dataset está correto)
     - Create Dataset
 
-### 2. Construção do Modelo
+### 2. Construção/Treinamento do Modelo
 
 -   No SageMaker Canvas, clique em My Models > Create New Model.
 -   Por se tratar de um modelo preditivo de estoque, selecione 'Predictive analysis' > Create.
 -   Selecione o dataset importado no passo anterior > Select Dataset.
--   Na guia 'Build', configure:
-    - Target Column:
-    - 
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+-   Na guia 'Build', 'Target Column': QUANTIDADE_ESTOQUE
+-   Configure Model:
+    - Model Type: Time series forecasting
+    - Item ID Column: ID_PRODUTO
+    - Use holiday schedule: Brazil
+    - Save
+- Replace all missing values with MEDIAN in PRECO
+- Replace all missing values with ZERO in QUANTIDADE_ESTOQUE
+- Quick Build      
 
-### 3. Treinamento do Modelo
-
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
-
-### 4. Análise
+### 3. Análise
 
 -   Após o treinamento, examine as métricas de performance do modelo.
 -   Verifique as principais características que influenciam as previsões.
 -   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
 
-### 5. Previsão
+### 4. Previsão
 
 -   Use o modelo treinado para fazer previsões de estoque.
 -   Exporte os resultados e analise as previsões geradas.
