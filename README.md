@@ -50,5 +50,5 @@
     - O produto 1022 se destaca com demanda média esperada de 1055%.
     - No pior dos cenários (P10), o produto 1022 será o menos afetado.
       
-    - Obs.: São necessárias informações adicionais, como características dos produtos e segmentação de mercado, para o levantamento de hipóteses que expliquem as variações observadas. Conhecer o negócio é vital para uma boa análise de dados e sua consequente geração de relatórios relevantes para a gerência. Sem maiores informações, as análise se torna genérica e superficial.
+    - Obs.: São necessárias informações adicionais, como características dos produtos e segmentação de mercado, para o levantamento de hipóteses que expliquem as variações observadas. Conhecer o negócio é vital para uma boa análise de dados e sua consequente geração de relatórios relevantes para a gerência. Sem maiores informações, a análise se torna genérica e superficial.
 
